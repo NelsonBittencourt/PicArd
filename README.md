@@ -1,4 +1,4 @@
-# Picard
+# PicArd
 Pic programmer with Arduino Uno.
 
 # Hardware
