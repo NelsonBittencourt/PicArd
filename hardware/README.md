@@ -4,7 +4,7 @@ Pic programmer with Arduino Uno Hardware
 # Arduino Uno
 Text and image
 
-<img src="PicArd_Hardware_v039_Arduino.png" width="700">
+<img src="PicArd_Hardware_v039_Arduino.png" width="500">
 
 
 # DC-DC Boost Converter
