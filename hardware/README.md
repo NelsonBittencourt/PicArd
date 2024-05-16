@@ -18,5 +18,5 @@ Text and image
 <img src="PicArd_Hardware_v039_Voltages_Control.png" width="700">
 
 # PDF Schematic
-[Link to pdf with full schematic] (PicArd_Hardware_v039.pdf)
+[Link to pdf with full schematic] (/PicArd_Hardware_v039.pdf)
 
