@@ -1,2 +1,9 @@
-# UnoPicKit
-Planning repository for pic kit clone using Arduino Uno
+# Picard
+Pic programmer with Arduino Uno.
+
+# Hardware
+
+# Software
+
+# Notes
+
