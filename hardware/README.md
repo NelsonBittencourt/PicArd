@@ -16,12 +16,12 @@ The following figure shows the Arduino Uno R3 connections.
 
 Signals description:
 
-+VPP_ONOFF			- Turns on/off PIC's programming voltage (VPP)
-+VDD_ONOFF			- Turns on/off PIC's main voltage (VDD)
-+ICSPCLK_DEVICE		- Clock output to PIC
-+ICSPDAT_DEVICE		- Data input/output to/from PIC
-+PWM					- Controls VPP value 
-+PWM_FB				- PWM feedback voltage
++ VPP_ONOFF			- Turns on/off PIC's programming voltage (VPP)
++ VDD_ONOFF			- Turns on/off PIC's main voltage (VDD)
++ ICSPCLK_DEVICE		- Clock output to PIC
++ ICSPDAT_DEVICE		- Data input/output to/from PIC
++ PWM					- Controls VPP value 
++ PWM_FB				- PWM feedback voltage
 
 ## DC-DC Boost Converter
 
@@ -37,7 +37,6 @@ PWM signal from Arduino controls Q4 through R1 and C2 (capacitor added to improv
 L1, D2 and C1 completes basic DC/DC boost circuitry. A voltage divider (R2 and R3) is
 used to reduce VPP and avoid Arduino greater than 5V in PWM_FB pin. As an additional precaution, I added D1 (5.1V zener diode).
 
-
 ## Voltages Control
 
 VPP (from DC/DC converter) and VDD (from Arduino) must be applied to PIC at specific times. 
@@ -47,7 +46,6 @@ The circuit below shows my solution:
 <img src="PicArd_Hardware_v039_Voltages_Control.png" width="700">
 
 VPP_DEVICE and VDD_DEVICE must be applied to PIC's correspondent pins.
-
 
 ## PDF Schematic
 [Full schematic PDF](https://github.com/NelsonBittencourt/Picard/blob/main/hardware/PicArd_Hardware_v039.pdf)
