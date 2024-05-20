@@ -2,9 +2,9 @@
 
 PicArd hardware is composed by:
 
-a) Arduino Uno (in my project a clone R3 version);
-b) DC-DC step-up (boost) converter and
-c) Bipolar junction transistors to control PIC voltages.
+a. Arduino Uno (in my project a clone R3 version);
+b. DC-DC step-up (boost) converter and
+c. Bipolar junction transistors to control PIC voltages.
 
 As I don't intend to use this circuit frequently, I only assembled it on a breadboard.
 
