@@ -6,6 +6,6 @@ A) Arduino Software
 1. DC/DC software controller and
 2. PIC interface
 
-B. PC software
+B) PC software
 
  
