@@ -10,7 +10,7 @@ As I don't intend to use this circuit frequently, I only assembled it on a bread
 
 ## Arduino Uno
 
-The following figure shows the Arduino Uno R3 connections.
+The following figure shows Arduino Uno R3 connections for this project.
 
 <img src="PicArd_Hardware_v039_Arduino.png" width="500">
 
