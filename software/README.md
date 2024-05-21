@@ -3,12 +3,12 @@
 PicArd software is composed by:
 
 A. Arduino software
-1 DC/DC software controller and
-2 PIC interface
+1. DC/DC software controller and
+2. PIC interface
 
 B. PC software
-1 Executable file
-2 PIC devices database
+1. Executable file
+2. PIC devices database
 
 # PC software usage
 
@@ -21,11 +21,11 @@ PicArd -c <serial port> -d <device name> [-r read options] [-w write options] [-
 '''
 
 where:
-    + serial port - [Mandatory]   USB connected to Arduino Uno with PicArd firmware;
-    + device name - [Mandadory]   Device name. Example: PIC12F675;
-    + -r          - [Optional]    Reads device parameters (use picard -r 0 to see read options);
-    + -w          - [Optional]    Writes device parameters (use picard -w 0 to see write options);
-    + -h          - [Optional]    Used with -w program and -w all. Specifies hex file to be send to device;
-    + -o          - [Optional]    Output file for read options. If omitted, output to screen.
++ serial port - [Mandatory]   USB connected to Arduino Uno with PicArd firmware;
++ device name - [Mandadory]   Device name. Example: PIC12F675;
++ -r          - [Optional]    Reads device parameters (use picard -r 0 to see read options);
++ -w          - [Optional]    Writes device parameters (use picard -w 0 to see write options);
++ -h          - [Optional]    Used with -w program and -w all. Specifies hex file to be send to device;
++ -o          - [Optional]    Output file for read options. If omitted, output to screen.
  
  
