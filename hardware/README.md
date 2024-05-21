@@ -16,12 +16,12 @@ The following figure shows Arduino Uno R3 connections for this project.
 
 Signals description:
 
-+ VPP_ONOFF			- Turns on/off PIC's programming voltage (VPP)
-+ VDD_ONOFF			- Turns on/off PIC's main voltage (VDD)
-+ ICSPCLK_DEVICE		- Clock output to PIC
-+ ICSPDAT_DEVICE		- Data input/output to/from PIC
-+ PWM					- Controls VPP value 
-+ PWM_FB				- PWM feedback voltage
++ VPP_ONOFF			  - Turns on/off PIC's programming voltage (VPP)
++ VDD_ONOFF			  - Turns on/off PIC's main voltage (VDD)
++ ICSPCLK_DEVICE	- Clock output to PIC
++ ICSPDAT_DEVICE	- Data input/output to/from PIC
++ PWM					    - Controls VPP value 
++ PWM_FB				  - PWM feedback voltage
 
 ## DC-DC Boost Converter
 
