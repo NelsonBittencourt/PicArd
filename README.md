@@ -3,7 +3,11 @@ Pic programmer with Arduino Uno.
 
 # Hardware
 
+Under construction.
+
 # Software
+
+Under construction.
 
 # Tested devices
 + PIC12F675
