@@ -17,5 +17,6 @@ If you have tested PicArd with other devices, let me know and I'll update this l
 
 If you want to send me a PIC as a gift, I will happy to test it! Please, send me a mail : nbittencourt at hotmail dot com
 
-# Notes
+# Contact
 
+Under construction.
