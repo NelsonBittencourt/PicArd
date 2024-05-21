@@ -3,12 +3,12 @@
 PicArd software is composed by:
 
 A. Arduino software
-A.1 DC/DC software controller and
-A.2 PIC interface
+1 DC/DC software controller and
+2 PIC interface
 
 B. PC software
-B.1 Executable file
-B.2 PIC devices database
+1 Executable file
+2 PIC devices database
 
 # PC software usage
 
