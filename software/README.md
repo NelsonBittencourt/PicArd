@@ -16,9 +16,9 @@ PicArd PC software is a console application for Windows.
 
 The sintaxe for this application is:
 
-´´´
+```
 PicArd -c <serial port> -d <device name> [-r read options] [-w write options] [-h <hex file>] [-o <output file>]
-´´´
+```
 
 where:
 + serial port - [Mandatory]   USB connected to Arduino Uno with PicArd firmware;
