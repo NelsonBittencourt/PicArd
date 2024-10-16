@@ -3,11 +3,11 @@ Pic programmer with Arduino Uno.
 
 # Hardware
 
-Under construction.
+[Hardware](https://github.com/NelsonBittencourt/PicArd/tree/main/hardware)
 
 # Software
 
-Under construction.
+[Software](https://github.com/NelsonBittencourt/PicArd/tree/main/software)
 
 # Tested devices
 + PIC12F675
