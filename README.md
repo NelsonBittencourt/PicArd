@@ -1,5 +1,5 @@
 # PicArd
-Pic programmer with Arduino Uno.
+A low-cost Pic programmer with Arduino Uno (hardware + software).
 
 # Hardware
 
