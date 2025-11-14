@@ -1,0 +1,17 @@
+// PIC12F675 Blink LED Sample
+// All rows not starting with ":" are considered comments in PicArd
+// Program data
+:02000000FD2BD6
+:1007BA000730831299008B0183169F018501FB3054
+:1007CA00DF005F08831285050430DF005F088312AB
+:1007DA0085060230A2004530A100A930A000A00B76
+:1007EA00F42BA10BF42BA20BF42BFB2BE92B0028E7
+:0407FA008301DD2B6F
+// Configuration Word
+:02400E009431EB
+// PicArd's specific rows
+// Code 06 indicates BandGap to set into device (0x2000 in this example)
+:020000060020XX
+// Code 07 indicates OSCCAL to set into device (0x344C in this example)
+:020000074C34XX
+:00000001FF
