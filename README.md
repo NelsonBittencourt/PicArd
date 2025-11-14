@@ -180,7 +180,7 @@ This example follows [PIC16F818/819 Memory Programming Specification](https://gi
 
 The link below contains all the schematic diagrams we have seen so far:
 
-[Full schematic PDF](https://github.com/NelsonBittencourt/Picard/blob/main/docs/PicArd_Hardware_v041.pdf)
+[Full schematic PDF](https://github.com/NelsonBittencourt/Picard/blob/main/docs/PicArd_Hardware_041.pdf)
 
 
 ## C) PicArd Software
