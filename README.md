@@ -29,6 +29,7 @@ PicArd **ISN'T**:
 + capable of handle PIC32, EEPROM and KEELOQ families and
 + able to program device via ENHANCED ICSP (programming executive).
 
+*Important note:* PicArd has only been tested with the PIC12F675 and PIC16F819 microcontrollers.
 
 ## B) PicArd Hardware
 
