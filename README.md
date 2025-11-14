@@ -381,13 +381,14 @@ Table 3. Not implemented script codes
 | 0xBE | UNIO_TX | EEPROMs only|
 | 0xBD | UNIO_TX_RX | EEPROMs only|
 
+### Personal site:
+https://nrbenergia.azurewebsites.net/
 
-## D) Contact Info:
+or
 
-### Personal sites:
 http://www.nrbenergia.somee.com/  
 
-https://nrbenergia.azurewebsites.net/
+
 
 ### LinkedIn:
 https://www.linkedin.com/in/nelsonrossibittencourt/
