@@ -199,7 +199,7 @@ Download it [here](https://github.com/NelsonBittencourt/Picard/blob/main/softwar
 
 ### C.2) PC Software:
 
-PicArd PC software is a console application for Windows, its main functions are:
+PicArd PC software is a console application for Windows/Linux, its main functions are:
 
 - Parse device database;
 - Parse *'.hex'* files provided by user;
