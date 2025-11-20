@@ -204,7 +204,7 @@ PicArd PC software is a console application for Windows/Linux, its main function
 - Parse device database;
 - Parse *'.hex'* files provided by user;
 - Backup *OSCCAL*, *bandgap* and configuration words to avoid data loss and
-- Send/receive information to/from Arduino via USB port;
+- Send/receive information to/from Arduino via USB port.
 
 Waring: Database file (*pic_devices.dat*) must be in the same folder that PicArd executable (*PicArd.exe*).
 Download PicArd's PC software in *Releases* section.
