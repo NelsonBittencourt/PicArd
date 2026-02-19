@@ -223,7 +223,7 @@ Download PicArd's PC software in *Releases* section.
 
 ### C.2.1) GUI
 
-GUI version consists of a single main window, as shown in Figure 8.It is self-explanatory and requires no further explanation.
+GUI version consists of a single main window, as shown in Figure 8.It is self-explanatory.
 
 <br>
 <table align="center"><tr><td> 
