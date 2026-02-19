@@ -214,8 +214,10 @@ PicArd PC software has two flavors: GUI or console. Both have been compiled for 
 - Backup *OSCCAL*, *bandgap* and configuration words to avoid data loss and
 - Send/receive information to/from Arduino via USB port.
 
-Waring: Database file (*pic_devices.dat*) must be in the same folder that PicArd 
+Warning 1: Database file (*pic_devices.dat*) must be in the same folder that PicArd 
 executable.
+
+Warning 2: In Linux, ensure that your user has read and write access to USB devices.
  
 Download PicArd's PC software in *Releases* section.
 
@@ -247,7 +249,6 @@ PicArd GUI files are named *picard_gui_<version>_windows.zip* and *picard_gui_<v
 ### C.2.2) Console Application:
 
 Console version is a typical command-line application. The basic commands are:
-
 
 #### Sintax:
 
@@ -424,7 +425,7 @@ Table 3. Not implemented script codes
 | 0xBE | UNIO_TX | EEPROMs only|
 | 0xBD | UNIO_TX_RX | EEPROMs only|
 
-## D )Contact
+## D) Contact
 
 ### Personal site:
 https://nrbenergia.azurewebsites.net/
