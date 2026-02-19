@@ -241,8 +241,13 @@ application executed. This information can be useful for checking for possible e
 
 Some features have not yet been implemented, such as "Save hex file" or "Save Project".
 
+PicArd GUI files are named *picard_gui_<version>_windows.zip* and *picard_gui_<version>_linux.zip*.
+
 
 ### C.2.2) Console Application:
+
+Console version is a typical command-line application. The basic commands are:
+
 
 #### Sintax:
 
@@ -323,6 +328,8 @@ option is mandatory to write all the data correctly.
 picard -c COM4 -d PIC12F675 -w eeprom -h program.hex
 
 ```
+
+PicArd Console files are named *picard_console_<version>_windows.zip* and *picard_console_<version>_linux.zip*.
 
 ### C.3) Script based (PC and Arduino software):
 
@@ -417,7 +424,7 @@ Table 3. Not implemented script codes
 | 0xBE | UNIO_TX | EEPROMs only|
 | 0xBD | UNIO_TX_RX | EEPROMs only|
 
-## D) Contact
+## D )Contact
 
 ### Personal site:
 https://nrbenergia.azurewebsites.net/
