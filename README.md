@@ -1,5 +1,13 @@
 # PicArd - Ultra-Low Cost PIC Programmer
 
+## Table of Contents
+
+* [Intro](#a-intro)
+* [Hardware](#b-picard-hardware)
+* [Software](#c-picard-software)
+* [Contact](#d-contact)
+
+
 ## A) Intro
 
 As my projects became increasingly complex (and required more discrete components), 
@@ -199,17 +207,44 @@ Download it [here](https://github.com/NelsonBittencourt/Picard/blob/main/softwar
 
 ### C.2) PC Software:
 
-PicArd PC software is a console application for Windows/Linux, its main functions are:
+PicArd PC software has two flavors: GUI or console. Both have been compiled for Windows and Linux, and their functions are:
 
 - Parse device database;
 - Parse *'.hex'* files provided by user;
 - Backup *OSCCAL*, *bandgap* and configuration words to avoid data loss and
 - Send/receive information to/from Arduino via USB port.
 
-Waring: Database file (*pic_devices.dat*) must be in the same folder that PicArd executable (*PicArd.exe*).
-Download PicArd's PC software in *Releases* section.
+Waring: Database file (*pic_devices.dat*) must be in the same folder that PicArd 
+executable.
  
-#### C.2.1) Command line sintaxe:
+Download PicArd's PC software in *Releases* section.
+
+### C.2.1) GUI
+
+GUI version consists of a single main window, as shown in Figure 8.It is self-explanatory and requires no further explanation.
+
+<br>
+<table align="center"><tr><td> 
+<img src="images/Picard_IDE_041_Main_Window.png" width="700"><br>
+<p align="center" width="100%"><b>Figure 8. PicArd GUI Main Window</b></p>
+</td></tr></table>
+<br>
+
+This version generates two log files (in the executable directory).
+
+First one is **osccals_bandgaps.txt**, which will save the OSCCALs and BandGaps values 
+​​every time a device is read. This information is useful to avoid losing factory 
+calibration data for certain PICs.
+
+Second one is **picard.log**, which will show a brief description of the step the 
+application executed. This information can be useful for checking for possible errors.
+
+Some features have not yet been implemented, such as "Save hex file" or "Save Project".
+
+
+### C.2.2) Console Application:
+
+#### Sintax:
 
 ```
 PicArd -c <serial port> -d <device name> [-r read options] [-w write options] [-h <hex file>] [-o <output file>]
@@ -224,9 +259,9 @@ where:
 + -o          - [Optional]    Output file for read options. If omitted, outputs to screen.
 
 
-#### C.2.2) Usage examples
+#### Usage examples
 
-1) Verify a hex file:
+**Example 1**: Verify a hex file:
 
 ```
 picard -d <device name> -r check_hex -h <hex_file_to_check>
@@ -237,7 +272,7 @@ This will create the file *hex_verification.txt*, which allows you to verify if 
 **Attention**: *check_hex* option does not consider device's actual *OSCCAL* and *Bandgap* parameters!
 
 
-2) Verify if PIC12F675 exist in database (*pic_device.dat*):
+**Example 2**: Verify if PIC12F675 exist in database (*pic_device.dat*):
 
 ```
 picard -d PIC12F675
@@ -251,7 +286,7 @@ LVP support : No
 Nothing to do!
 ```
 
-3) Read all parameters from a PIC12F675 (Arduino on COM4), results to screen:
+**Example 3**: Read all parameters from a PIC12F675 (Arduino on COM4), results to screen:
 
 ```
 picard -c COM4 -d PIC12F675 -r all 
@@ -260,7 +295,7 @@ picard -c COM4 -d PIC12F675 -r all
 
 ```
 
-4) Read all parameters from a PIC12F675 (Arduino on COM4), results to file:
+**Example 4**: Read all parameters from a PIC12F675 (Arduino on COM4), results to file:
 
 ```
 picard -c COM4 -d PIC12F675 -r all -o test
@@ -270,7 +305,7 @@ Short text results (configuration words, device ID and user words) will be displ
 EEPROM and Program data will be save to 'test.epr' and 'test.prg', respectively.
 
 
-5) Send hex data (*program.hex*) from PC to PIC12F675:
+**Example 5**: Send hex data (*program.hex*) from PC to PIC12F675:
 
 ```
 picard -c COM4 -d PIC12F675 -w all -h program.hex
@@ -282,7 +317,7 @@ The *-w all* option executes a *chip erase* before writing data. For some device
 option is mandatory to write all the data correctly.
 
 
-6) Send EEPROM data only (*program.hex*) from PC to PIC12F675:
+**Example 6**: Send EEPROM data only (*program.hex*) from PC to PIC12F675:
 
 ```
 picard -c COM4 -d PIC12F675 -w eeprom -h program.hex
@@ -382,13 +417,14 @@ Table 3. Not implemented script codes
 | 0xBE | UNIO_TX | EEPROMs only|
 | 0xBD | UNIO_TX_RX | EEPROMs only|
 
+## D) Contact
+
 ### Personal site:
 https://nrbenergia.azurewebsites.net/
 
 or
 
 http://www.nrbenergia.somee.com/  
-
 
 
 ### LinkedIn:
