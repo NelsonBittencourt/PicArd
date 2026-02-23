@@ -55,9 +55,21 @@ and few passive components. Check out the breadboard:
 <br>
 <table align="center"><tr><td> 
 <img src="images/Picard_Hardware_041_BreadBoard.png" width="500"><br>
-<p align="center" width="100%"><b>Figure 1. PicArd Breadboard</b></p>
+<p align="center" width="100%"><b>Figure 1a. PicArd Breadboard</b></p>
 </td></tr></table>
 <br>
+
+If you prefer, you can assemble the PicArd Programmer as a shield. Figure 1b shows 
+a rendered image of the Arduino Uno Shield that I created.
+
+<br>
+<table align="center"><tr><td> 
+<img src="images/PicArd_Hardware_Uno_Shield_v041_ray3.png" width="500"><br>
+<p align="center" width="100%"><b>Figure 1b. PicArd Arduino Uno Shield</b></p>
+</td></tr></table>
+<br>
+
+Gerber files for the fabrication of this shield are available in [Uno Shield folder](https://github.com/NelsonBittencourt/Picard/blob/main/Uno_Shield).
 
 
 ### B.1) Arduino Uno R3
