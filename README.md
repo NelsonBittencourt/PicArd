@@ -64,7 +64,7 @@ a rendered image of the Arduino Uno Shield that I created.
 
 <br>
 <table align="center"><tr><td> 
-<img src="images/PicArd_Hardware_Uno_Shield_v041_ray3.png" width="500"><br>
+<img src="images/PicArd_Hardware_Uno_Shield_v042_ray3.png" width="500"><br>
 <p align="center" width="100%"><b>Figure 1b. PicArd Arduino Uno Shield</b></p>
 </td></tr></table>
 <br>
@@ -78,7 +78,7 @@ The following figure shows Arduino Uno R3 connections to PicArd:
 
 <br>
 <table align="center"><tr><td> 
-<img src="images/Picard_Hardware_041_Arduino_Uno_R3.png" width="500"><br>
+<img src="images/Picard_Hardware_042_Arduino_Uno_R3.png" width="500"><br>
 <p align="center" width="100%"><b>Figure 2. Arduino UNO R3 Connections</b></p>
 </td></tr></table>
 <br>
@@ -123,7 +123,7 @@ I designed this circuit to operate with VPPs between 2V and 13V.
 
 <br>
 <table align="center"><tr><td> 
-<img src="images/Picard_Hardware_041_DC_DC_booster.png" width="700"><br>
+<img src="images/Picard_Hardware_042_DC_DC_booster.png" width="700"><br>
 <p align="center" width="100%"><b>Figure 3. DC/DC booster</b></p>
 </td></tr></table>
 <br>
