@@ -395,7 +395,7 @@ Will send all necessary data (program data, EEPROM data, configuration words, et
 to device.
 
 
-PicArd Console files are named *picard_console_<version>_windows.zip* and *picard_console_<version>_linux.zip*.
+PicArd Console files are named *picard_console_<version_number>_windows.zip* and *picard_console_<version_number>_linux.zip*.
 
 
 ### C.3) Script based (PC and Arduino software):
