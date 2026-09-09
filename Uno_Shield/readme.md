@@ -1,6 +1,6 @@
 # PicArd - Ultra-Low Cost PIC Programmer
 
-## PicArd Hardware - Gerber Files
+## PicArd - Arduino Uno Shield - Gerber Files
 
 **[Current Version]**
 
