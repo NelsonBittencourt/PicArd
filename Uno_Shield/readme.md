@@ -4,12 +4,10 @@
 
 **[Current Version]**
 
-v.042 - New PWM output pin (D10); New footprints for R2, R10, C2 and Q4. To use these gerber files, use 0.42 firmware version.
-
+**Revison 2** - New PWM output pin (D10); New footprints for R2, R10, C2 and Q4. This revision requires version 0.42+ of firmware and PC software (GUI or console).
 
 
 **[Deprecated and not recommended]**
 
-v.041 - First realease. To use these gerber files, use 0.41 firmware version.
-
+**Revison 1** - First realease. This revision requires version 0.41 of firmware and PC software (GUI or console).
 
