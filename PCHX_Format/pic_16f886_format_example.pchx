@@ -1,0 +1,47 @@
+// PicArd Hex File (pchx)
+// This format is not compatible with other PIC programmer Tools.
+// Any line not starting with ":" is treated as a comment. 
+// Adopting C++ style single-line comments ("//") is optional.
+// Current PicArd version will ignore checksum information. 
+// **************************************************************
+//
+// **************
+// Program Memory
+// **************
+:060000000A128A11FC2F18
+:100F9600831603130F088F3960388F0006108316E7
+:100FA6000317091283120313061083120313061480
+:100FB6000330F2008A30F1005530F000F00BE12FDB
+:100FC600F10BE12FF20BE12FE82F8312031306102A
+:100FD6000330F2008A30F1005530F000F00BF12FAB
+:100FE600F10BF12FF20BF12FF82FD82F0A128A11DD
+:0A0FF600002883010A128A11CB2F94
+:084000000100020003000400AE
+//
+// *******************
+// Configuration Words
+// *******************
+:04400E00D438FF3E65
+//
+// PicArd (v 0.45+) recognizes three special codes:
+// Code 06 - BandGap
+// Code 07 - OSCCAL 
+// Code 08 - Calibration words
+//
+// For these codes, the Intel Hex sintax remains the same but
+// PicArd will ignore the address field.
+//
+// For instance, the PIC16F886 uses one Calibration Word, thus:
+//
+// *******************************************************************
+// Calibration Word - Code 08; Value 0x2124 
+// Use this code only if your MCU is uncalibrated!
+// 'xx' below is the checksum byte. Current PicArd version ignores it.
+// *******************************************************************
+:020000082421xx
+//
+// ********
+// End file
+// ********
+:00000001FF
+:00000001FF
