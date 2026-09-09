@@ -37,11 +37,12 @@ PicArd **ISN'T**:
 + capable of handle PIC32, EEPROM and KEELOQ families and
 + able to program device via ENHANCED ICSP (programming executive).
 
-*Important note:* PicArd has been tested with PIC12F629, PIC12F675, PIC16F819 and PIC16F886 microcontrollers.
+*Important note:* PicArd has been tested with: 
+				  PIC12F629, PIC12F675, PIC16F819, PIC16F886 and PIC16F1938.
 
 ## B) PicArd Hardware
 
-The PicArd hardware consists of:
+The PicArd Hardware consists of:
 
 1) Arduino UNO R3 (with *ATMEGA328PU* 32-lead TQFP); 
 2) DC-DC step-up (boost) converter;
@@ -64,10 +65,13 @@ a rendered image of the Arduino Uno Shield that I created.
 
 <br>
 <table align="center"><tr><td> 
-<img src="images/PicArd_Hardware_Uno_Shield_v042_ray3.png" width="500"><br>
+<img src="images/PicArd_Hardware_Uno_Shield_Rev_2_Ray.png" width="500"><br>
 <p align="center" width="100%"><b>Figure 1b. PicArd Arduino Uno Shield</b></p>
 </td></tr></table>
 <br>
+
+**Important:** For new projects, always use PicArd Programmer Hardware *Revision 2* and 
+the latest software versions (>= 0.45).
 
 Gerber files for the fabrication of this shield are available in [Uno Shield folder](https://github.com/NelsonBittencourt/Picard/blob/main/Uno_Shield).
 
@@ -199,10 +203,12 @@ This example follows [PIC16F818/819 Memory Programming Specification](https://gi
 
 ### B.5) Full Schematics
 
-The link below contains all the schematic diagrams we have seen so far:
+The link below contains all the schematic diagrams we have seen so far 
+(I also included a page with typical voltage and signal values):
 
-[Full schematic PDF](https://github.com/NelsonBittencourt/Picard/blob/main/docs/PicArd_Hardware_042.pdf)
+[Full schematic PDF](https://github.com/NelsonBittencourt/PicArd/blob/main/schematics/PicArd_Programmer_Hardware_Rev_2.pdf)
 
+<br>
 
 ## C) PicArd Software
 
@@ -214,8 +220,7 @@ PicArd requires two sets of code:
 - Send/receive serial data to/from the connected PIC and
 - Send/receive information to/from PC via USB port.
 
-Arduino software must be uploaded to Arduino Uno R3. 
-Download it [here](https://github.com/NelsonBittencourt/Picard/blob/main/software/PicArd_Arduino_Uno_Firmware_041.hex) or into *Release* section
+Arduino software must be uploaded to Arduino Uno R3. Download it from *Release* section
 
 ### C.2) PC Software:
 
@@ -226,10 +231,19 @@ PicArd PC software has two flavors: GUI or console. Both have been compiled for 
 - Backup *OSCCAL*, *bandgap* and configuration words to avoid data loss and
 - Send/receive information to/from Arduino via USB port.
 
-Warning 1: Database file (*pic_devices.dat*) must be in the same folder that PicArd 
+As of version 0.45, PC applications also handle Calibration Words. Because I had 
+previously created two additional record types to the Intel HEX standard (06 for BandGaps
+and 07 for OSCCALs), I decided to call the input file format as *Picard Hex Files* (.pchx).
+
+For further details and examples regarding this format, refer to [pchx format](https://github.com/NelsonBittencourt/PicArd/tree/main/PCHX_Format).
+
+*Warning 1*: Database file (*pic_devices.dat*) must be in the same folder that PicArd 
 executable.
 
-Warning 2: In Linux, ensure that your user has read and write access to USB devices.
+*Warning 2*: From version 0.45 onwards, the *picard.ini* file must be provided. 
+See further details about this file in *C.2.1* or *C.2.2*.
+
+*Warning 3:* In Linux, ensure that your user has read and write access to USB devices.
  
 Download PicArd's PC software in *Releases* section.
 
@@ -239,63 +253,94 @@ GUI version consists of a single main window, as shown in Figure 8.It is self-ex
 
 <br>
 <table align="center"><tr><td> 
-<img src="images/Picard_IDE_041_Main_Window.png" width="700"><br>
+<img src="images/Picard_GUI_045_Main_Window.png" width="700"><br>
 <p align="center" width="100%"><b>Figure 8. PicArd GUI Main Window</b></p>
 </td></tr></table>
 <br>
 
-This version generates two log files (in the executable directory).
+This version generates two log files (in the executable directory):
 
-First one is **osccals_bandgaps.txt**, which will save the OSCCALs and BandGaps values 
-​​every time a device is read. This information is useful to avoid losing factory 
+First one is **osccals_bandgaps.txt**, which will save the OSCCALs, BandGaps and Calibration Words 
+values every time a device is read. This information is useful to avoid losing factory 
 calibration data for certain PICs.
 
-Second one is **picard.log**, which will show a brief description of the step the 
-application executed. This information can be useful for checking for possible errors.
+The second file, *picard.log*, logs the steps executed by the application to help identify potential errors.
 
-Some features have not yet been implemented, such as "Save hex file" or "Save Project".
+Some features have not yet been implemented, such as "Save PCHx file".
 
-PicArd GUI files are named *picard_gui_<version>_windows.zip* and *picard_gui_<version>_linux.zip*.
+PicArd GUI files are named *picard_gui_<version_number>_windows.zip* and *picard_gui_<version_number>_linux.zip*.
+
+From version 0.45 onwards, the *picard.ini* file must be provided. Although this file is included in every package in the release folder, it must be modified by the user before launching the application.
+
+The *picard.ini* sintax is:
+
+```
+last_usb:none
+last_device:none
+voltage_divider_top_resistor:0
+voltage_divider_bottom_resistor:0
+programming_voltage_stability_check:0
+```
+
+*last_usb* and *last_device* (GUI only) can be left as "none".
+
+*voltage_divider_top_resistor* and *voltage_divider_bottom_resistor* represent the values of resistors R2 and R3 in the boost converter feedback voltage divider (Figure 3). Measure the actual values of your circuit and enter them as integers in this file.
+
+For example, my prototype had R2 = 4074.9 ohms and R3 = 2675.1 ohms. The *picard.ini* is:
+
+```
+last_usb:none
+last_device:none
+voltage_divider_top_resistor:4705
+voltage_divider_bottom_resistor:2675
+programming_voltage_stability_check:0
+```
+
+When *programming_voltage_stability_check* is enabled (value 1), the Picard Hardware waits for the boost converter's output voltage to stabilize. This feature worked well 
+in my experiments, but some people did not achieve good results (see [Issue #1](https://github.com/NelsonBittencourt/PicArd/issues/1) ,Portuguese only). 
 
 
 ### C.2.2) Console Application:
 
-Console version is a typical command-line application. The basic commands are:
+Starting with version 0.45, I decided to simplify the commands for PicArd console version.
 
-#### Sintax:
+If, for some reason, you continue using the old versions, simply type **picard.exe** or **./picard** to see the syntax. 
+ 
+The *picard.ini* file must also be used for the console version. Here a example for this file in console application directory:
 
 ```
-PicArd -c <serial port> -d <device name> [-r read options] [-w write options] [-h <hex file>] [-o <output file>]
+voltage_divider_top_resistor:4705
+voltage_divider_bottom_resistor:2675
+programming_voltage_stability_check:0
+```
+
+Replace the values above with your measured values.
+
+
+#### Command line sintax:
+
+```
+picard -c <serial port> -d <device name> [-r output_file] [-w hex_file]
 ```
 
 where:
-+ serial port - [Mandatory]   USB connected to Arduino Uno with PicArd firmware;
-+ device name - [Mandadory]   Device name. Example: PIC12F675;
-+ -r          - [Optional]    Reads device parameters (use picard -r 0 to see read options);
-+ -w          - [Optional]    Writes device parameters (use picard -w 0 to see write options);
-+ -h          - [Optional]    Used with -w program and -w all. Specifies hex file to be send to device;
-+ -o          - [Optional]    Output file for read options. If omitted, outputs to screen.
-
+<pre>
+serial port - [Mandatory]   USB connected to Arduino Uno with PicArd firmware;
+device name - [Mandadory]   Device name. Example: PIC12F675;
+-r          - [Optional]    Reads device and save values to *output_file*
+-w          - [Optional]    Write values from *hex_file* to device
+</pre>
 
 #### Usage examples
 
-**Example 1**: Verify a hex file:
-
-```
-picard -d <device name> -r check_hex -h <hex_file_to_check>
-
-```
-This will create the file *hex_verification.txt*, which allows you to verify if file was correctly parsed by PicArd.
-
-**Attention**: *check_hex* option does not consider device's actual *OSCCAL* and *Bandgap* parameters!
-
-
-**Example 2**: Verify if PIC12F675 exist in database (*pic_device.dat*):
+**Example 1**: Verify if PIC12F675 exist in database (*pic_device.dat*):
 
 ```
 picard -d PIC12F675
 
-PicArd 0.41 - Pic Programmer using Arduino UNO
+PicArd 0.45 - PIC Programmer using Arduino UNO
+Nelson Rossi Bittencourt - https://github.com/nelsonbittencourt/picard
+
 Device found
 Device name : PIC12F675
 Device ID   : 4032 (fc0)
@@ -304,45 +349,54 @@ LVP support : No
 Nothing to do!
 ```
 
-**Example 3**: Read all parameters from a PIC12F675 (Arduino on COM4), results to screen:
+**Example 2**: Read a PIC12F675 (Arduino on COM3) to file *pic_output.pchx*
 
 ```
-picard -c COM4 -d PIC12F675 -r all 
+picard -c COM3 -d PIC12F675 -r pic_output.pchx
 
-<Result will be displayed on screen>
+PicArd 0.45 - PIC Programmer using Arduino UNO
+Nelson Rossi Bittencourt - https://github.com/nelsonbittencourt/picard
 
+Device found
+Name        : PIC12F675
+ID          : 4032 (fc0)
+Family      : Midrange/Standard
+LVP support : No
+
+Programmer booted.
+VDD setted to: 5V
+Programming entry mode: HVP
+Setting VPP to : 12V
+
+Reading device configuration:
+Reading Device ID: Ok [fc0]
+Reading User IDs: Ok
+To avoid errors or calibration lost, PicArd will save OSCCAL, BandGap and Calibration Word(s) into osccals_bandgaps.txt.
+Feel free to write down values to reduce data loss probability.
+Reading OSCCAL : Ok [3460]
+Reading Configuration Word(s): Ok
+Reading Program Memory: Ok
+Reading EEPROM Memory: Ok
+Data save to file : pic_output.pchx
+
+Jobs finished! Reset Arduino state.
 ```
 
-**Example 4**: Read all parameters from a PIC12F675 (Arduino on COM4), results to file:
+For PIC read operations, the console version of PicArd will save the read data in [.pchx format](https://github.com/NelsonBittencourt/PicArd/tree/main/PCHX_Format).
+
+
+**Example 3**: Send hex data (*program.hex*) from PC to PIC12F675:
 
 ```
-picard -c COM4 -d PIC12F675 -r all -o test
+picard -c COM3 -d PIC12F675 -w program.hex
 
 ```
-Short text results (configuration words, device ID and user words) will be displayed on screen.
-EEPROM and Program data will be save to 'test.epr' and 'test.prg', respectively.
+Will send all necessary data (program data, EEPROM data, configuration words, etc) 
+to device.
 
-
-**Example 5**: Send hex data (*program.hex*) from PC to PIC12F675:
-
-```
-picard -c COM4 -d PIC12F675 -w all -h program.hex
-
-```
-Will send all necessary data (program data, EEPROM data, configuration words, etc) to device.
-
-The *-w all* option executes a *chip erase* before writing data. For some devices, using this
-option is mandatory to write all the data correctly.
-
-
-**Example 6**: Send EEPROM data only (*program.hex*) from PC to PIC12F675:
-
-```
-picard -c COM4 -d PIC12F675 -w eeprom -h program.hex
-
-```
 
 PicArd Console files are named *picard_console_<version>_windows.zip* and *picard_console_<version>_linux.zip*.
+
 
 ### C.3) Script based (PC and Arduino software):
 
@@ -397,7 +451,7 @@ Table 2. Implemented script codes
 | 0xE6 | If equal goto | Implemented, not tested|
 | 0xE5 | If greater goto | Implemented, not tested|
 | 0xE4 | Goto index | -|
-| 0xE3 | Exit script | Mapped only. Not functional in 0.41 version|
+| 0xE3 | Exit script | Mapped only. Not used |
 | 0xDD | Loop buffer | -|
 | 0xDB | Pop download | -|
 | 0xDA | COREINST18 | Not tested|
