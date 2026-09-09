@@ -30,6 +30,7 @@ special file (*osccals_bandgaps.txt*) and will try to restore them if necessary.
 
 If an error occurs, you can use saved values into pchx file to restore factory defaults.
 
+PicArd will treat any line not starting with ":" as a comment.
 
 See *pic12f675_format_example.pchx* and *pic_16f886_format_example.pchx* for more 
 details.
