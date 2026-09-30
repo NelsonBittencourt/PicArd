@@ -37,8 +37,14 @@ PicArd **ISN'T**:
 + capable of handle PIC32, EEPROM and KEELOQ families and
 + able to program device via ENHANCED ICSP (programming executive).
 
-*Important note:* PicArd has been tested with: 
-				  PIC12F629, PIC12F675, PIC16F819, PIC16F886 and PIC16F1938.
+
+#### *Important notes:* 
+
+-PicArd has been tested with: PIC12F629, PIC12F675, PIC16F819, PIC16F886 and PIC16F1938.
+
+-As reported by [wocard2](https://github.com/wocard2), the voltage on the data and clock pins of the current hardware is 5V. This voltage is not suitable for all PICs. This limitation may be addressed in a future version. 
+$\color{red}{\textbf{Carefully check the operating voltage of your PIC to avoid potential damage!}}$
+
 
 ## B) PicArd Hardware
 
