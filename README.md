@@ -5,7 +5,8 @@
 * [Intro](#a-intro)
 * [Hardware](#b-picard-hardware)
 * [Software](#c-picard-software)
-* [Contact](#d-contact)
+* [Tested Devices](#d-tested-devices)
+* [Contact](#e-contact)
 
 
 ## A) Intro
@@ -38,12 +39,13 @@ PicArd **ISN'T**:
 + able to program device via ENHANCED ICSP (programming executive).
 
 
-#### *Important notes:* 
+#### *Important note:* 
 
--PicArd has been tested with: PIC12F629, PIC12F675, PIC16F819, PIC16F886 and PIC16F1938.
+As reported by [wocard2](https://github.com/wocard2), the voltage on ICSP pins of current hardware is 5 V. This voltage is not suitable for all PICs.
 
--As reported by [wocard2](https://github.com/wocard2), the voltage on the data and clock pins of the current hardware is 5V. This voltage is not suitable for all PICs. This limitation may be addressed in a future version. 
 $\color{red}{\textbf{Carefully check the operating voltage of your PIC to avoid potential damage!}}$
+
+A new hardware revison with level shifters is under development and will resolve the mismatch between 5 V and lower voltages.
 
 
 ## B) PicArd Hardware
@@ -497,7 +499,27 @@ Table 3. Not implemented script codes
 | 0xBE | UNIO_TX | EEPROMs only|
 | 0xBD | UNIO_TX_RX | EEPROMs only|
 
-## D) Contact
+## D) Tested Devices
+
+Table 4. Tested Devices
+| Device    |   Tester | Notes|
+| :--- | :--- | :--- |
+|PIC10F322|[@wocard2](https://github.com/wocard2)||
+|PIC12F1572|[@wocard2](https://github.com/wocard2)||
+|PIC12F1822|[@wocard2](https://github.com/wocard2)||
+|PIC12F1840|[@wocard2](https://github.com/wocard2)||
+|PIC12F629|[@girardim](https://github.com/girardim)||
+|PIC12F675|[@NelsonBittencourt](https://github.com/NelsonBittencourt)||
+|PIC16F13145|[@wocard2](https://github.com/wocard2)||
+|PIC16F1454|[@wocard2](https://github.com/wocard2)||
+|PIC16F18324|[@wocard2](https://github.com/wocard2)|HVP only. Internal pull-up between VDD and VPP.|
+|PIC16F19156|[@wocard2](https://github.com/wocard2)||
+|PIC16F1938|[@girardim](https://github.com/girardim)||
+|PIC16F819|[@NelsonBittencourt](https://github.com/NelsonBittencourt)||
+|PIC16F886|[@girardim](https://github.com/girardim)||
+
+
+## E) Contact
 
 ### Personal site:
 https://nrbenergia.azurewebsites.net/
