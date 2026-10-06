@@ -41,7 +41,7 @@ PicArd **ISN'T**:
 
 #### *Important note:* 
 
-As reported by [wocard2](https://github.com/wocard2), the voltage on ICSP pins of current hardware is 5 V. This voltage is not suitable for all PICs.
+As reported by [wocard2](https://github.com/wocard2), the voltage on ICSP pins of current hardware is 5 V. This voltage is not suitable for PICs whose maximum operating voltage is below 5 V 
 
 $\color{red}{\textbf{Carefully check the operating voltage of your PIC to avoid potential damage!}}$
 
@@ -107,15 +107,15 @@ The connections between Arduino R3 and PicArd are:
 Table 1. Labels Descriptions
 | Label     |  Description | 
 | :--- | :--- |
-| 5V     | Positive 5V (remember, Arduino needs to be connected to PC USB) | 
-| 3V3     | Positive 3.3V (from Arduino Uno) | 
+| 5V     | Positive 5 V (remember, Arduino needs to be connected to PC USB) | 
+| 3V3     | Positive 3.3 V (from Arduino Uno) | 
 | PWM  |  PWM signal for DC/DC boost converter | 
 | PWM_FB  | PWM voltage feedback   | 
 | VDD_ONOFF  | Turns on/off VDD to device  | 
 | VPP_ONOFF | Turns on/off VPP to device  | 
-| VDD_5.0V | Select/Unselect 5.0V as VDD | 
-| VDD_3.3V | Select/Unselect 3.3V as VDD | 
-| VDD_2.7V | Select/Unselect 2.7V as VDD | 
+| VDD_5.0V | Select/Unselect 5.0 V as VDD | 
+| VDD_3.3V | Select/Unselect 3.3 V as VDD | 
+| VDD_2.7V | Select/Unselect 2.7 V as VDD | 
 | ICSP_DATA  | In-circuit serial programming (ICSP) data pin | 
 | ICSP_CLOCK  | ICSP clock pin  | 
 | ICSP_AUX | ICSP for Low Voltage Programming (LVP)  | 
@@ -128,10 +128,10 @@ Table 1. Labels Descriptions
 
 ### B.2) DC-DC Boost Converter
 
-DC-DC boost converter is responsible for raising voltage from 5V to programming voltage (*VPP*)
+DC-DC boost converter is responsible for raising voltage from 5 V to programming voltage (*VPP*)
 required by PICs. This module is optional if you intend to use only PICs that support LVP.
 
-I designed this circuit to operate with VPPs between 2V and 13V.
+I designed this circuit to operate with VPPs between 2 V and 13 V.
 
 <br>
 <table align="center"><tr><td> 
@@ -148,10 +148,10 @@ used apply a secure voltage (<=5.0V) to PWM_FB pin. As an additional precaution,
 
 ### B.3) Voltages Control
 
-The PICs' supply voltages (VDD) can range from 2.7V to 5.0V. Since the Arduino Uno has voltage
-regulators for 3.3V and 5.0V, I used the circuit below to allow the selection of the correct 
+The PICs' supply voltages (VDD) can range from 2.7 V to 5.0 V. Since the Arduino Uno has voltage
+regulators for 3.3 V and 5.0 V, I used the circuit below to allow the selection of the correct 
 voltage. By controlling pins D02 (VDD_5.0V), D03 (VDD_3.3V), and D04 (VDD_2.7V), we can obtain
-5.0V, 3.3V, and approximately 2.7V, which covers almost all devices.
+5.0 V, 3.3 V, and approximately 2.7V, which covers almost all devices.
 
 This approach eliminates the necessity of a Low Dropout Regulator (LDO), reducing the 
 project cost.
