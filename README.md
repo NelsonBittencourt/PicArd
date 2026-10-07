@@ -508,6 +508,7 @@ Table 4. Tested Devices
 |PIC12F1572|[@wocard2](https://github.com/wocard2)||
 |PIC12F1822|[@wocard2](https://github.com/wocard2)||
 |PIC12F1840|[@wocard2](https://github.com/wocard2)||
+|PIC12F508|[@wocard2](https://github.com/wocard2)|Device without ID. Read ID skipped by software|
 |PIC12F629|[@girardim](https://github.com/girardim)||
 |PIC12F675|[@NelsonBittencourt](https://github.com/NelsonBittencourt)||
 |PIC16F13145|[@wocard2](https://github.com/wocard2)||
