@@ -502,22 +502,23 @@ Table 3. Not implemented script codes
 ## D) Tested Devices
 
 Table 4. Tested Devices
-| Device    |   Tester | Notes|
+| Device    |   Testers | Notes|
 | :--- | :--- | :--- |
 |PIC10F322|[@wocard2](https://github.com/wocard2)||
-|PIC12F1572|[@wocard2](https://github.com/wocard2)||
+|PIC12F1572|[@wocard2](https://github.com/wocard2) and [@lalo-uy](https://github.com/lalo-uy)||
 |PIC12F1822|[@wocard2](https://github.com/wocard2)||
 |PIC12F1840|[@wocard2](https://github.com/wocard2)||
 |PIC12F508|[@wocard2](https://github.com/wocard2)|Device without ID. Read ID skipped by software|
 |PIC12F629|[@girardim](https://github.com/girardim)||
 |PIC12F675|[@NelsonBittencourt](https://github.com/NelsonBittencourt)||
+|PIC16C84|[@lalo-uy](https://github.com/lalo-uy)||
 |PIC16F13145|[@wocard2](https://github.com/wocard2)||
 |PIC16F1454|[@wocard2](https://github.com/wocard2)||
 |PIC16F18324|[@wocard2](https://github.com/wocard2)|HVP only. Internal pull-up between VDD and VPP.|
 |PIC16F19156|[@wocard2](https://github.com/wocard2)||
 |PIC16F1938|[@girardim](https://github.com/girardim)||
 |PIC16F819|[@NelsonBittencourt](https://github.com/NelsonBittencourt)||
-|PIC16F886|[@girardim](https://github.com/girardim)||
+|PIC16F886|[@girardim](https://github.com/girardim) and [@lalo-uy](https://github.com/lalo-uy)||
 
 
 ## E) Contact
