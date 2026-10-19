@@ -519,7 +519,7 @@ Table 4. Tested Devices
 |PIC16F1938|[@girardim](https://github.com/girardim)||
 |PIC16F819|[@NelsonBittencourt](https://github.com/NelsonBittencourt)||
 |PIC16F886|[@girardim](https://github.com/girardim) and [@lalo-uy](https://github.com/lalo-uy)||
-
+|PIC18F14K50 |[@wocard2](https://github.com/wocard2)|HVP only. Internal pull-up between VDD and VPP.|
 
 ## E) Contact
 
