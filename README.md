@@ -462,7 +462,7 @@ Table 2. Implemented script codes
 | 0xE3 | Exit script | Mapped only. Not used |
 | 0xDD | Loop buffer | -|
 | 0xDB | Pop download | -|
-| 0xDA | COREINST18 | Not tested|
+| 0xDA | COREINST18 | -|
 | 0xD9 | COREINST24 | Not tested|
 | 0xD8 | NOP24 | Not tested|
 | 0xD7 | VISI24 | Not tested|
