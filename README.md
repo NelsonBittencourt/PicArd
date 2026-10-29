@@ -514,12 +514,12 @@ Table 4. Tested Devices
 |PIC16C84|[@lalo-uy](https://github.com/lalo-uy)||
 |PIC16F13145|[@wocard2](https://github.com/wocard2)||
 |PIC16F1454|[@wocard2](https://github.com/wocard2)||
-|PIC16F18324|[@wocard2](https://github.com/wocard2)|HVP only. Internal pull-up between VDD and VPP.|
+|PIC16F18324|[@wocard2](https://github.com/wocard2)|HVP only. Internal VPP pull-up too strong|
 |PIC16F19156|[@wocard2](https://github.com/wocard2)||
 |PIC16F1938|[@girardim](https://github.com/girardim)||
 |PIC16F819|[@NelsonBittencourt](https://github.com/NelsonBittencourt)||
 |PIC16F886|[@girardim](https://github.com/girardim) and [@lalo-uy](https://github.com/lalo-uy)||
-|PIC18F14K50 |[@wocard2](https://github.com/wocard2)|HVP only. Internal pull-up between VDD and VPP.|
+|PIC18F14K50 |[@wocard2](https://github.com/wocard2)|HVP only. Internal VPP pull-up too strong|
 
 ## E) Contact
 
