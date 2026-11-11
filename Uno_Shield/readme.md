@@ -2,12 +2,8 @@
 
 ## PicArd - Arduino Uno Shield - Gerber Files
 
-**[Current Version]**
-
-**Revison 2** - New PWM output pin (D10); New footprints for R2, R10, C2 and Q4. This revision requires version 0.42+ of firmware and PC software (GUI or console).
-
-
-**[Deprecated and not recommended]**
-
-**Revison 1** - First realease. This revision requires version 0.41 of firmware and PC software (GUI or console).
-
+|  File    | Description  |
+| :--- | :---|  
+|*PicArd_Uno_Shield_Revision_3.zip*| Comming soon.|
+|*PicArd_Uno_Shield_Revision_2.zip*| <b>For PICs with a 5V operating voltage</b>: use this revision as is (you can remove R12, R13, Q6, and Q7).<br><br><b>For PICs with an operating voltage below 5V</b>: adapt revision 2 with a level-shifter or use revision 3. |
+|*PicArd_Uno_Shield_Revision_1_DEPRECATED.zip* | Old Hardware Programmer. Not recommended for new projects |
