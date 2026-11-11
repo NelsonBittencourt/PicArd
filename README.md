@@ -78,7 +78,7 @@ a rendered image of the Arduino Uno Shield that I created.
 </td></tr></table>
 <br>
 
-**Important:** For new projects, always use PicArd Programmer Hardware *Revision 2* and 
+**Important:** For new projects, always use PicArd Programmer Hardware *Revision 3* and 
 the latest software versions (>= 0.45).
 
 Gerber files for the fabrication of this shield are available in [Uno Shield folder](https://github.com/NelsonBittencourt/Picard/blob/main/Uno_Shield).
@@ -135,7 +135,7 @@ I designed this circuit to operate with VPPs between 2 V and 13 V.
 
 <br>
 <table align="center"><tr><td> 
-<img src="images/Picard_Hardware_042_DC_DC_booster.png" width="700"><br>
+<img src="images/Picard_Hardware_Rev3_DC_DC_booster.png" width="700"><br>
 <p align="center" width="100%"><b>Figure 3. DC/DC booster</b></p>
 </td></tr></table>
 <br>
@@ -158,7 +158,7 @@ project cost.
 
 <br>
 <table align="center"><tr><td> 
-<img src="images/Picard_Hardware_041_VDD_Selection.png" width="700"><br>
+<img src="images/Picard_Hardware_Rev3_VDD_Selection.png" width="700"><br>
 <p align="center" width="100%"><b>Figure 4. VDD Selection Control</b></p>
 </td></tr></table>
 <br>
@@ -171,7 +171,7 @@ The circuit below shows my solution:
 
 <br>
 <table align="center"><tr><td> 
-<img src="images/Picard_Hardware_041_Voltages_Control.png" width="700"><br>
+<img src="images/Picard_Hardware_Rev3_Voltages_Control.png" width="700"><br>
 <p align="center" width="100%"><b>Figure 5. Voltages Control</b></p>
 </td></tr></table>
 <br>
@@ -189,7 +189,7 @@ The figures below show two connection examples:
 #### B.4.1) PicArd to PIC12F675
 <br>
 <table align="center"><tr><td> 
-<img src="images/Picard_Hardware_041_Connection_Example_1.png" width="700"><br>
+<img src="images/Picard_Hardware_Rev3_Connection_Example_1.png" width="700"><br>
 <p align="center" width="100%"><b>Figure 6. PicArd connected to PIC12F675</b></p>
 </td></tr></table>
 <br>
@@ -201,7 +201,7 @@ For PIC12F675 in the example above, see: [PIC12F629/675 Memory Programming Speci
 #### B.4.2) PicArd to PIC16F819
 <br>
 <table align="center"><tr><td> 
-<img src="images/Picard_Hardware_041_Connection_Example_2.png" width="700"><br>
+<img src="images/Picard_Hardware_Rev3_Connection_Example_2.png" width="700"><br>
 <p align="center" width="100%"><b>Figure 7. PicArd connected to PIC16F819</b></p>
 </td></tr></table>
 <br>
