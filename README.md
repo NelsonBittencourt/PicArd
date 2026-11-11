@@ -72,7 +72,7 @@ a rendered image of the Arduino Uno Shield that I created.
 
 <br>
 <table align="center"><tr><td> 
-<img src="images/PicArd_Hardware_Uno_Shield_Rev_2_Ray.png" width="500"><br>
+<img src="images/PicArd_Shield_Rev3_Preview.png" width="500"><br> 
 <p align="center" width="100%"><b>Figure 1b. PicArd Arduino Uno Shield</b></p>
 </td></tr></table>
 <br>
