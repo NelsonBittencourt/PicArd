@@ -41,12 +41,11 @@ PicArd **ISN'T**:
 
 #### *Important note:* 
 
-As reported by [wocard2](https://github.com/wocard2), the voltage on ICSP pins of current hardware is 5 V. This voltage is not suitable for PICs whose maximum operating voltage is below 5 V 
+As reported by [wocard2](https://github.com/wocard2), the voltage on ICSP pins of Programmer Revision 2 is 5V. This voltage is not suitable for PICs whose maximum operating voltage is below 5V 
 
-$\color{red}{\textbf{Carefully check the operating voltage of your PIC to avoid potential damage!}}$
+To use the Programmer with PICs operating at a voltage lower than 5V, use Revision 2 with a level-shifter, or use Revision 3, which is already available in the 'schematics' folder.
 
-A new hardware revison with level shifters is under development and will resolve the mismatch between 5 V and lower voltages.
-
+As soon as possible, I'll update the Gerber files for Arduino Uno shield Revision 3.
 
 ## B) PicArd Hardware
 
