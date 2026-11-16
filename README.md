@@ -504,23 +504,23 @@ Table 4. Tested Devices
 | Device    | HW Revision | SW/Firmware Version | Programming Mode | Tested by |Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 |PIC10F322|2|0.45|HVP|[wocard2](https://github.com/wocard2)||
-|PIC12F1572|2|0.45|HVP|[wocard2](https://github.com/wocard2) and [@lalo-uy](https://github.com/lalo-uy)||
+|PIC12F1572|2|0.45|HVP|[wocard2](https://github.com/wocard2) and [lalo-uy](https://github.com/lalo-uy)||
 |PIC12F1822|2|0.45|HVP|[wocard2](https://github.com/wocard2)||
 |PIC12F1840|2|0.45|HVP|[wocard2](https://github.com/wocard2)||
 |PIC12F508|2|0.50 preview|HVP|[wocard2](https://github.com/wocard2)|Device without ID. Read ID skipped by software|
 |PIC12F629|2|0.45|HVP|[girardim](https://github.com/girardim)||
 |PIC12F675|2|0.50 preview|HVP and LVP|[Nelson Bittencourt](https://github.com/NelsonBittencourt)||
 |PIC16C84|2|0.45|HVP|[lalo-uy](https://github.com/lalo-uy)||
-|PIC16F13145|1|0.45|HVP and LVP|[wocard2](https://github.com/wocard2)||
+|PIC16F13145|2|0.45|HVP and LVP|[wocard2](https://github.com/wocard2)||
 |PIC16F1454|2|0.45|HVP and LVP|[wocard2](https://github.com/wocard2)||
-|PIC16F18324|2|0.45|HVP and LVP|[wocard2](https://github.com/wocard2)|HVP only. Internal VPP pull-up too strong.|
+|PIC16F18324|2|0.45|HVP|[wocard2](https://github.com/wocard2)|HVP only. Internal VPP pull-up too strong.|
 |PIC16F19156|2|0.45|HVP and LVP|[wocard2](https://github.com/wocard2)||
 |PIC16F1938|2|0.45|HVP|[girardim](https://github.com/girardim)||
 |PIC16F72|2|0.45|HVP|[Mufaddal Darbar](https://github.com/mufaddal-darbar)| Write & Read-Back Mismatch (under investigation: issue [#9](https://github.com/NelsonBittencourt/PicArd/issues/9))|
 |PIC16F819|2|0.45|HVP and LVP|[Nelson Bittencourt](https://github.com/NelsonBittencourt)||
 |PIC16F877A|2|0.45|HVP|[Mufaddal Darbar](https://github.com/mufaddal-darbar)|	
-|PIC16F886|2|0.45|HVP|[girardim](https://github.com/girardim) and [@lalo-uy](https://github.com/lalo-uy)||
-|PIC18F14K50|2|0.50 preview|HVP|[@wocard2](https://github.com/wocard2)|HVP only. Internal VPP pull-up too strong.|
+|PIC16F886|2|0.45|HVP|[girardim](https://github.com/girardim) and [lalo-uy](https://github.com/lalo-uy)||
+|PIC18F14K50|2|0.50 preview|HVP|[wocard2](https://github.com/wocard2)|HVP only. Internal VPP pull-up too strong.|
 
 ## E) Contact
 
