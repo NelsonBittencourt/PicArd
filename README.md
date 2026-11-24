@@ -6,7 +6,8 @@
 * [Hardware](#b-picard-hardware)
 * [Software](#c-picard-software)
 * [Tested Devices](#d-tested-devices)
-* [Contact](#e-contact)
+* [Third-Party Contributions](#e-third-party-contributions)
+* [Contact](#f-contact)
 
 
 ## A) Intro
@@ -522,7 +523,17 @@ Table 4. Tested Devices
 |PIC16F886|2|0.45|HVP|[girardim](https://github.com/girardim) and [lalo-uy](https://github.com/lalo-uy)||
 |PIC18F14K50|2|0.50 preview|HVP|[wocard2](https://github.com/wocard2)|HVP only. Internal VPP pull-up too strong.|
 
-## E) Contact
+## E) Third-party Contributions
+Table 05. Third-party contributions
+
+|   Contributor  | Description | 
+| :--- | :--- | 
+|[girardim](https://github.com/girardim)| [PicArd perfboard (HW rev:2 / SW ver:0.45)](https://github.com/NelsonBittencourt/PicArd/tree/main/third_party/girardim)|
+|[lalo-uy](https://github.com/lalo-uy)| [PicArd PCB + Arduino Nano (HW rev:2 / SW ver:0.45)](https://github.com/NelsonBittencourt/PicArd/tree/main/third_party/lalo_uy)|
+|[Mufaddal Darbar](https://github.com/mufaddal-darbar)|[PicArd perfboard (HW rev:2 / SW ver:0.45)](https://github.com/NelsonBittencourt/PicArd/tree/main/third_party/mufaddal_darbar) |
+|[eschlerc](https://github.com/eschlerc)| [PicArd Arduino Uno Shield for HW rev:3 (level-shifters)(https://github.com/NelsonBittencourt/PicArd/tree/main/third_party/eschlerc)] |
+
+## F) Contact
 
 ### Personal site:
 https://nrbenergia.azurewebsites.net/
