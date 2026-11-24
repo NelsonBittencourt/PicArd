@@ -531,7 +531,7 @@ Table 05. Third-party contributions
 |[girardim](https://github.com/girardim)| [PicArd perfboard (HW rev:2 / SW ver:0.45)](https://github.com/NelsonBittencourt/PicArd/tree/main/third_party/girardim)|
 |[lalo-uy](https://github.com/lalo-uy)| [PicArd PCB + Arduino Nano (HW rev:2 / SW ver:0.45)](https://github.com/NelsonBittencourt/PicArd/tree/main/third_party/lalo_uy)|
 |[Mufaddal Darbar](https://github.com/mufaddal-darbar)|[PicArd perfboard (HW rev:2 / SW ver:0.45)](https://github.com/NelsonBittencourt/PicArd/tree/main/third_party/mufaddal_darbar) |
-|[eschlerc](https://github.com/eschlerc)| [PicArd Arduino Uno Shield for HW rev:3 (level-shifters)(https://github.com/NelsonBittencourt/PicArd/tree/main/third_party/eschlerc)] |
+|[eschlerc](https://github.com/eschlerc)| [PicArd Arduino Uno Shield for HW rev:3 (level-shifters)](https://github.com/NelsonBittencourt/PicArd/tree/main/third_party/eschlerc) |
 
 ## F) Contact
 
